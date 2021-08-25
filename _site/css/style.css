@@ -1,0 +1,74 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+margin: 0;
+padding: 15px;
+font-size: 20px;
+line-height: 1.5;
+font-family: 'Cormorant Infant', serif;
+color: #0e0d0d;
+text-align: left;
+}
+
+h1{
+text-align: center;
+font-size: 55px;
+color: #B966A4;
+}
+
+.Lauri, h1{
+font-family: 'WindSong', cursive;
+}
+
+.menu a{
+list-style: none;
+display: block;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+.form-field > label, .form-field-area textarea {
+display: block;
+}
+
+
+.form-field input{
+padding: 10px;
+width: 20%;
+border: 1px solid #a5a4a4;
+}
+
+.form-field-area textarea{
+width: 40%;
+height: 200px;
+border: 1px solid #a5a4a4;
+}
+
+.form-field input:focus, .form-field-area textarea:focus {
+border: 1px solid #4e4e4e;
+outline: 0;
+}
+
+.required{
+color: #B966A4;
+}
+
+.submit{
+padding: 8px 6px;
+margin: 20px 0;
+width: 150px;
+max-width: 300px;
+border: 1px solid #696969;
+font-size: 20px;
+font-family: 'Cormorant Infant', serif;
+}
+
+
+
+footer{
+text-align: center;
+padding: 10px;
+background-color: #B966A4;
+}
