@@ -14,9 +14,7 @@ background-image: linear-gradient(
     rgba(255, 253, 253, 0.850)
   ),
 url(/images/dots2.jpg);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+
 }
 
 h1{
