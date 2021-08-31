@@ -58,7 +58,11 @@ h2::after {
 font-family: 'WindSong', cursive;
 }
 
-.menu a{
+.menu{
+padding-left: 0;
+}
+
+nav a{
 list-style: none;
 display: block;
 text-decoration: none;
@@ -70,7 +74,14 @@ text-align: center;
 padding: 2px 0;
 }
 
-.menu{
+.toggler{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+nav{
 background-color: #B966A4;
 }
 
