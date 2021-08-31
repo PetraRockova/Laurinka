@@ -62,6 +62,15 @@ Nadační fond Dar sluchu byl založen s cílem podpořit neslyšící s minimá
 <footer>&copy; 2021, Ucho pro Laurinku</footer>    
 
 
+<script>
+    const toggler = document.querySelector('.toggler');
+    const menu = document.querySelector('.menu');
+
+    toggler.addEventListener('click', hamburger);
+        function hamburger() {
+            menu.classList.toggle('visible');
+        }
+    </script>
 </body>
 </html>
 
