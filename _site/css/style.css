@@ -15,18 +15,16 @@ background-image: linear-gradient(
     rgba(255, 253, 253, 0.850)
   ),
 url(/images/dots2.jpg);
+}
 
+.Lauri, .hi, h1{
+font-family: 'WindSong', cursive;
 }
 
 main{
-  padding: 20px;
+padding: 0 20px;
 }
 
-img{
-max-width: 100%;
-width: 350px;
-box-shadow: rgb(217,217,214) 0 0 3px 1px;
-}
 
 h1{
 text-align: center;
@@ -38,8 +36,10 @@ h2{
 font-weight: 700;
 }
 
-.hi{
+/* nadpis ahoj všem */
+.hi{ 
 font-size: 60px;
+margin: 20px 0;
 }
 
 /*
@@ -54,9 +54,7 @@ h2::after {
 }
 */
 
-.Lauri, .hi, h1{
-font-family: 'WindSong', cursive;
-}
+
 
 .menu{
 padding-left: 0;
@@ -91,6 +89,33 @@ background-color: #B966A4;
   cursor: pointer;
 }
 
+/* obrázky */
+.main-pic{
+float:right;
+width: 450px;
+margin: 30px;
+}
+  
+img{
+max-width: 100%;
+width: 350px;
+box-shadow: rgb(217,217,214) 0 0 3px 1px; }  
+  
+.lauri-pic::after {
+content: "";
+position:absolute;
+left: 320px;
+top: 640px;
+width:600px;
+height:450px;
+border: 1px solid #B966A4;
+transform: rotate(85deg);
+}
+
+
+
+
+
 .form-field > label, .form-field-area textarea {
 display: block;
 }
@@ -100,6 +125,7 @@ display: block;
 padding: 10px;
 width: 20%;
 border: 1px solid #a5a4a4;
+border-radius: 3px;
 }
 
 .form-field-area textarea{
@@ -109,7 +135,7 @@ border: 1px solid #a5a4a4;
 }
 
 .form-field input:focus, .form-field-area textarea:focus {
-border: 1px solid #4e4e4e;
+border: 1px solid #B966A4;
 outline: 0;
 }
 
@@ -123,15 +149,15 @@ margin: 20px 0;
 width: 150px;
 max-width: 300px;
 border: 1px solid #696969;
+border-radius: 3px;
 font-size: 20px;
 font-family: 'Cormorant Infant', serif;
 }
 
-.main-pic{
-float:right;
-width: 450px;
-margin: 30px;
+.submit:hover{
+background-color:rgb(206, 182, 195);
 }
+
 
 
 footer{
@@ -152,7 +178,7 @@ margin: 0;
 nav a{
 display: inline-block;
 font-size: 20px;
-padding: 0 10px;
+padding: 0 12px;
 }
 
 nav{
