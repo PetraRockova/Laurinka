@@ -48,7 +48,6 @@
 
 <div class="lauri-pic">
 <img class="main-pic" src="/images/lauri.jpg" alt="Laurinka">
-</div>
 
 <p>
     Jmenuji se Laurinka Poláková a narodila jsem se s Duane-radial ray syndromem, který je extrémně vzácný. 
@@ -59,7 +58,7 @@
 </p> 
 
 <p>
-    Trošku hůř slyším, ale moc mi pomáhá moje dvojče Sofinka, která má sice stejný syndrom, ale neprojevil se u ní, tak jako u mě.I přes to všechno jsem šťastná, protože mám rodinu, která pro mě udělá cokoliv a miluje mě, takovou jaká jsem.
+    Trošku hůř slyším, ale moc mi pomáhá moje dvojče Sofinka, která má sice stejný syndrom, ale neprojevil se u ní, tak jako u mě.I přes to všechno jsem šťastná, protože mám rodinu, která pro mě udělá cokoliv a miluje mě takovou, jaká jsem.
 </p> 
 
 <p>
@@ -96,7 +95,7 @@ Díky všem!
 </p>
 
 <p>S láskou a pokorou</p>
-
+</div>
 <!--- jako nadpis --->
 
 <h2 class="Lauri">Laurinka ❤️</h2>
@@ -115,7 +114,19 @@ Díky všem!
 
     toggler.addEventListener('click', hamburger);
         function hamburger() {
-            menu.classList.toggle('visible');
+            if(toggler.textContent.includes('☰') && menu.classList.content !== 'visible') {
+                let textToChange = toggler.textContent;
+                let changeText = textToChange.replace('☰ Menu', '×');
+                toggler.textContent = changeText;
+                menu.classList.add('visible');
+                toggler.classList.add('toggler-x');
+            } else {
+                let textToChange = toggler.textContent;
+                let changeText = textToChange.replace('×', '☰ Menu');
+                toggler.textContent = changeText;
+                menu.classList.remove('visible');
+                toggler.classList.remove('toggler-x');
+            }
         }
     </script>
 </body>

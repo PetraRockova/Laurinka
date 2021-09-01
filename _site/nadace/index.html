@@ -74,7 +74,19 @@ Nadační fond Dar sluchu byl založen s cílem podpořit neslyšící s minimá
 
     toggler.addEventListener('click', hamburger);
         function hamburger() {
-            menu.classList.toggle('visible');
+            if(toggler.textContent.includes('☰') && menu.classList.content !== 'visible') {
+                let textToChange = toggler.textContent;
+                let changeText = textToChange.replace('☰ Menu', '×');
+                toggler.textContent = changeText;
+                menu.classList.add('visible');
+                toggler.classList.add('toggler-x');
+            } else {
+                let textToChange = toggler.textContent;
+                let changeText = textToChange.replace('×', '☰ Menu');
+                toggler.textContent = changeText;
+                menu.classList.remove('visible');
+                toggler.classList.remove('toggler-x');
+            }
         }
     </script>
 </body>
