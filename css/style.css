@@ -56,6 +56,21 @@ p{
 margin-top: 10px;
 }
 
+.source{
+font-size: 12px;
+}
+
+.source a{
+text-decoration: none;
+color: grey;
+}
+
+.darsluchu-source a{ 
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
 /* nadpis ahoj všem */
 .hi{ 
 font-size: 60px;
