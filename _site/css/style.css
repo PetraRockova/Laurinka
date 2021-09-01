@@ -90,11 +90,11 @@ nav{
 background-color: #B966A4;
 }
 
+
 /* obrázky */
 .main-pic{
-/*float:right; */
 width: 100%;
-max-width: 380px;
+max-width: 280px;
 margin: 0 30px;
 }
   
@@ -110,10 +110,10 @@ position: relative;
 .lauri-pic::after {
 content: "";
 position:absolute;
-left: 20px;
+left: 24px;
 top: -1px;
-width:390px;
-height:500px;
+width:290px;
+height:370px;
 border: 2px solid #B966A4;
 transform: rotate(-5deg);
 z-index: -99;
@@ -170,6 +170,23 @@ padding: 10px;
 background-color: #B966A4;
 color: white;
 }
+
+
+@media screen and (min-width:500px){
+
+.main-pic{
+max-width: 380px;
+}
+
+.lauri-pic::after{
+left: 20px;
+top: -1px;
+width:390px;
+height:500px;
+}
+}
+
+
 
 @media screen and (min-width:900px){
 
