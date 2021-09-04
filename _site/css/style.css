@@ -14,7 +14,8 @@ background-image: linear-gradient(
     rgba(255, 253, 253, 0.521),
     rgba(255, 253, 253, 0.850)
   ),
-url(/images/pink.jpg);
+url(/images/pink2.jpg);
+background-size: 400%;
 }
 
 .Lauri, .hi, h1{
@@ -22,7 +23,7 @@ font-family: 'WindSong', cursive;
 }
 
 main{
-padding: 0 20px;
+padding: 0 20px 20px 20px;
 max-width: 1550px;
 margin-left: auto;
 margin-right: auto;
@@ -79,9 +80,11 @@ margin: 20px 0;
 
 
 .menu{
-padding-left: 0;
+padding: 0 0 25px 0;
+
 display: none;
 margin-top: 0;
+
 }
 
 .visible{
@@ -102,6 +105,7 @@ display: block;
   font-family: serif;
   font-size: 40px;
   color: white;
+  height: 25px;
 }
 
 nav a{
@@ -215,25 +219,33 @@ top: -1px;
 width:390px;
 height:500px;
 }
+
 }
 
 
 
 @media screen and (min-width:900px){
 
+  body{
+    background-size: 200%;
+    }
+
+
 h1{
-font-size: 75px;
+font-size: 85px;
+margin: 20px 0;
 }
 
 .menu{
 display: block;
 text-align: center;
 margin: 0;
+padding: 0;
 }
 
 nav a{
 display: inline-block;
-font-size: 20px;
+font-size: 25px;
 padding: 0 12px;
 }
 
