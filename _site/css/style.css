@@ -46,7 +46,6 @@ margin-top: 25px;
 
 h2{
   margin-bottom: 0px;
-  font-size: 25px;
 }
 
 h3{
@@ -80,8 +79,12 @@ font-size: 60px;
 margin: 25px 0;
 }
 
-.contact{
+.contact, .foto{
 margin: 25px 0;
+}
+
+.foto{
+text-align:center;
 }
 
 
@@ -137,7 +140,13 @@ width: 100%;
 max-width: 280px;
 margin: 0 20px;
 }
-  
+
+.foto img{
+width: 250px;
+max-width: 100%;
+}
+
+
 img{
 max-width: 100%;
 width: 350px;
@@ -286,5 +295,12 @@ float: right;
   }
   
 
+  
+.foto{
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: center;
+  gap: 20px;
+  }
 
 }
