@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucho pro Laurinku</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellota&family=Bellota+Text&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+<header>
+
+<h1>Ucho pro Laurinku</h1>
+
+<nav>
+<div class="toggler">☰ Menu</div>    
+<ul class="menu">
+<a href="/"><li>Úvod</li></a>
+<a href="/kdo-jsme/"><li>Kdo jsme</li></a>
+<a href="/co-chceme/"><li>Co chceme</li></a>
+<a href="/laurinky-syndrom/"><li>Laurinky syndrom</li></a>
+<a href="/transparentni-ucet/"><li>Transparentní účet</li></a>
+<a href="/nadace/"><li>Nadace</li></a>
+<a href="/fotogalerie/"><li>Fotogalerie</li></a>
+<a href="/kontakt/"><li>Kontakt</li></a>
+</ul>    
+</nav>
+
+</header>
+
+
+
+<main class="main-box">
+
+
+
+<h2>Pracujeme na tom :)</h2>
+
+</main>
+
+<footer>&copy; 2021, Ucho pro Laurinku</footer>    
+
+
+<script>
+    const toggler = document.querySelector('.toggler');
+    const menu = document.querySelector('.menu');
+
+    toggler.addEventListener('click', hamburger);
+        function hamburger() {
+            if(toggler.textContent.includes('☰') && menu.classList.content !== 'visible') {
+                let textToChange = toggler.textContent;
+                let changeText = textToChange.replace('☰ Menu', '×');
+                toggler.textContent = changeText;
+                menu.classList.add('visible');
+                toggler.classList.add('toggler-x');
+            } else {
+                let textToChange = toggler.textContent;
+                let changeText = textToChange.replace('×', '☰ Menu');
+                toggler.textContent = changeText;
+                menu.classList.remove('visible');
+                toggler.classList.remove('toggler-x');
+            }
+        }
+    </script>
+</body>
+</html>
+
+

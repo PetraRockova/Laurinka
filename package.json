@@ -1,7 +1,6 @@
 {
   "name": "laurinka",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
@@ -20,5 +19,6 @@
   "homepage": "https://github.com/PetraRockova/Laurinka#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
-  }
+  },
+  "description": ""
 }
