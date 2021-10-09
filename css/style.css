@@ -3,16 +3,15 @@ html { box-sizing: border-box; }
 
 body {
 margin: 0;
-/*padding: 15px;*/
 font-size: 24px;
-font-weight: 500;
+font-weight: 600;
 line-height: 1.5;
 font-family: 'Cormorant Infant', serif;
 
 color: black;
 text-align: left;
 background-image: linear-gradient(
-    rgba(255, 253, 253, 0.521),
+    rgba(255, 253, 253, 0.623),
     rgba(255, 253, 253, 0.877)
   ),
 url(/images/pink2.jpg);
@@ -30,6 +29,7 @@ padding: 0 20px 20px 20px;
 max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
+margin-bottom: 60px;
 text-align: center;
 }
 
@@ -148,7 +148,8 @@ padding: 2px 0;
 
 nav{
 background-color: #B966A4;
-box-shadow: 0px 2px 6px rgb(160, 158, 158);
+box-shadow: 0px 2px 4px rgb(160, 159, 159) ;
+
 }
 
 /*
@@ -170,7 +171,7 @@ box-shadow: rgb(217,217,214) 0 0 3px 1px;
 .main-pic{
 width: 100%;
 max-width: 280px;
-margin: 0 20px;
+margin: 0 25px;
 }
 
 
@@ -201,16 +202,21 @@ margin-top: 10px;
 color: #B966A4;
 }
 
+/*
 .lauri-pic{
 position: relative;
-}
+}*/
 
-.lauri-pic::after {
+.lauri-pic::before {
 content: "";
-position:absolute;
+/*position:absolute;
 left: 15px;
-top: -1px;
+top: -1px;*/
+display: block;
+margin-left: auto;
+margin-right: auto;
 width:290px;
+margin-bottom: -370px;
 height:370px;
 border: 3px solid #B966A4;
 transform: rotate(-5deg);
@@ -275,11 +281,25 @@ background-color:rgb(206, 182, 195);
 footer{
 text-align: center;
 padding: 10px;
+margin-top: 25px;
 background-color: #B966A4;
 color: white;
 font-size: 20px;
+position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
 }
 
+.thanks a {
+  display: none;
+  list-style: none;
+}
+
+.thanks {
+  list-style: none;
+}
 
 @media screen and (min-width:500px){
 
@@ -287,11 +307,10 @@ font-size: 20px;
 max-width: 380px;
 }
 
-.lauri-pic::after{
-left: 20px;
-top: -1px;
+.lauri-pic::before{
 width:390px;
 height:500px;
+margin-bottom: -500px;
 }
 }
 
@@ -342,12 +361,18 @@ padding: 14px 0;
 float: right;
 }
 
-.lauri-pic::after {
+.lauri-pic{
+  position: relative;
+}
+
+
+.lauri-pic::before {
+  position: absolute;
  left:unset;
   right: 16px;
   width:390px;
   height:500px;
-  transform: rotate(-5deg);
+  
 }
 }
 
