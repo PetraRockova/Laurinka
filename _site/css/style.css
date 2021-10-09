@@ -301,6 +301,10 @@ position: fixed;
   list-style: none;
 }
 
+.thanks-page, .nf-account{
+margin-bottom: 250px;
+}
+
 @media screen and (min-width:500px){
 
 .main-pic{
