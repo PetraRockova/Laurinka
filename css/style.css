@@ -4,10 +4,11 @@ html { box-sizing: border-box; }
 body {
 margin: 0;
 /*padding: 15px;*/
-font-size: 22px;
-font-weight: 600;
+font-size: 24px;
+font-weight: 500;
 line-height: 1.5;
 font-family: 'Cormorant Infant', serif;
+
 color: black;
 text-align: left;
 background-image: linear-gradient(
@@ -18,13 +19,15 @@ url(/images/pink2.jpg);
 background-size: 400%;
 }
 
+
+
 .Lauri, .hi, .h2-about, h1{
 font-family: 'WindSong', cursive;
 }
 
 main{
 padding: 0 20px 20px 20px;
-max-width: 1550px;
+max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
@@ -199,9 +202,14 @@ left: 15px;
 top: -1px;
 width:290px;
 height:370px;
-border: 2px solid #B966A4;
+border: 3px solid #B966A4;
 transform: rotate(-5deg);
 z-index: -99;
+}
+
+.contact a{
+text-decoration: none;
+color: #9b1f7c;
 }
 
 
@@ -223,6 +231,8 @@ width: 500px;
 max-width: 100%;
 height: 200px;
 border: 1px solid #a5a4a4;
+border-radius: 3px;
+margin: 0 auto;
 }
 
 .form-field input:focus, .form-field-area textarea:focus {
@@ -239,10 +249,11 @@ padding: 8px 6px;
 margin: 20px 0;
 width: 150px;
 max-width: 100%;
-border: 1px solid #696969;
+border: 1px solid #868686;
 border-radius: 3px;
 font-size: 20px;
 font-family: 'Cormorant Infant', serif;
+cursor: pointer;
 }
 
 .submit:hover{
