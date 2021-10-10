@@ -1,123 +1,134 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 body {
-margin: 0;
-font-size: 24px;
-font-weight: 600;
-line-height: 1.5;
-font-family: 'Cormorant Infant', serif;
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: "Cormorant Infant", serif;
 
-color: black;
-text-align: left;
-background-image: linear-gradient(
-    rgba(255, 253, 253, 0.623),
-    rgba(255, 253, 253, 0.877)
-  ),
-url(/images/pink2.jpg);
-background-size: 400%;
+  color: black;
+  text-align: left;
+  background-image: linear-gradient(
+      rgba(255, 253, 253, 0.623),
+      rgba(255, 253, 253, 0.877)
+    ),
+    url(/images/pink2.jpg);
+  background-size: 400%;
 }
 
-
-
-.Lauri, .hi, .h2-about, h1{
-font-family: 'WindSong', cursive;
+.Lauri,
+.hi,
+.h2-about,
+h1 {
+  font-family: "WindSong", cursive;
 }
 
-main{
-padding: 0 20px 20px 20px;
-max-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 60px;
-text-align: center;
+main {
+  padding: 0 20px 20px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
-h1{
-text-align: center;
-font-size: 60px;
-margin-left: 10px;
-margin-right: 10px;
-color: #B966A4;
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b966a4;
 }
 
-h2, h3{
-font-weight: 700;
-margin-top: 25px;
+h2,
+h3 {
+  font-weight: 700;
+  margin-top: 25px;
 }
 
-
-h2{
-margin-bottom: 0px;
+h2 {
+  margin-bottom: 0px;
 }
 
-.h2-about{
-font-size: 40px;
-margin-top: 35px;
+.h2-about {
+  font-size: 40px;
+  margin-top: 35px;
 }
 
-.twins .h2-about{
-margin-top: 25px;
+.twins .h2-about {
+  margin-top: 25px;
 }
 
-h3{
-margin-bottom: 10px;
+h3 {
+  margin-bottom: 10px;
 }
 
-
-p{
-margin-top: 10px;
+p {
+  margin-top: 10px;
 }
 
-.about-us{
-margin-top: 10px;
+.about-us {
+  margin-top: 10px;
 }
 
-.source{
-font-size: 12px;
+.source {
+  font-size: 12px;
 }
 
-.source a{
-text-decoration: none;
-color: grey;
+.source a {
+  text-decoration: none;
+  color: grey;
 }
 
-.darsluchu-source a{ 
-text-decoration: none;
-color: black;
-font-weight: bold;
+.darsluchu-source a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-.dr-tahiri{
-margin-bottom: 5px;
+.dr-tahiri {
+  margin-bottom: 5px;
 }
 
 /* nadpis ahoj všem */
-.hi{ 
-font-size: 60px;
-margin: 25px 0;
+.hi {
+  font-size: 60px;
+  margin: 25px 0;
 }
 
-.contact, .foto{
-margin: 25px 0;
+.contact,
+.foto {
+  margin: 25px 0;
 }
 
-.foto{
-text-align:center;
+.foto {
+  text-align: center;
 }
 
-
-.menu{
-padding: 0 0 25px 0;
-display: none;
-margin-top: 0;
+.menu {
+  padding: 0 0 25px 0;
+  display: none;
+  margin-top: 0;
 }
 
-.visible{
-display: block;
+.visible {
+  display: block;
 }
 
-.toggler{
+.toggler {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
@@ -134,22 +145,21 @@ display: block;
   height: 25px;
 }
 
-nav a{
-list-style: none;
-display: block;
-text-decoration: none;
-font-weight: bold;
-color: white;
-text-transform: uppercase;
-font-weight: 500;
-text-align: center;
-padding: 2px 0;
+nav a {
+  list-style: none;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding: 2px 0;
 }
 
-nav{
-background-color: #B966A4;
-box-shadow: 0px 2px 4px rgb(160, 159, 159) ;
-
+nav {
+  background-color: #b966a4;
+  box-shadow: 0px 2px 4px rgb(160, 159, 159);
 }
 
 /*
@@ -162,134 +172,107 @@ margin-right: auto;
 
 /* obrázky */
 
-img{
-max-width: 100%;
-width: 350px;
-box-shadow: rgb(217,217,214) 0 0 3px 1px;
-} 
-
-.main-pic{
-width: 100%;
-max-width: 280px;
-margin: 0 25px;
+img {
+  max-width: 100%;
+  width: 350px;
+  box-shadow: rgb(217, 217, 214) 0 0 3px 1px;
 }
 
-
-.foto img{
-width: 450px;
+.main-pic {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 25px;
 }
 
-.twin-photo-about{
-width: 450px;
+.foto img {
+  width: 450px;
 }
 
-.dad-photo-about{
-width: 400px;
-}
- 
-
-.pluses img{
-margin-top: 22px;
-}
-  
-.foto-nadace{
-width: 100%;
-max-width: 250px;
-margin-top: 10px;
+.twin-photo-about {
+  width: 450px;
 }
 
-.darsluchu-source a{
-color: #B966A4;
+.dad-photo-about {
+  width: 400px;
 }
 
-/*
-.lauri-pic{
-position: relative;
-}*/
-
-.lauri-pic::before {
-content: "";
-/*position:absolute;
-left: 15px;
-top: -1px;*/
-display: block;
-margin-left: auto;
-margin-right: auto;
-width:290px;
-margin-bottom: -370px;
-height:370px;
-border: 3px solid #B966A4;
-transform: rotate(-5deg);
-z-index: -99;
+.pluses img {
+  margin-top: 22px;
 }
 
-.contact a{
-text-decoration: none;
-color: #9b1f7c;
+.foto-nadace {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 10px;
 }
 
-
-.form-field > label, .form-field-area textarea {
-display: block;
+.darsluchu-source a {
+  color: #b966a4;
 }
 
-
-.form-field input{
-padding: 10px;
-width: 280px;
-max-width: 100%;
-border: 1px solid #a5a4a4;
-border-radius: 3px;
+.contact a {
+  text-decoration: none;
+  color: #9b1f7c;
 }
 
-.form-field-area textarea{
-width: 500px;
-max-width: 100%;
-height: 200px;
-border: 1px solid #a5a4a4;
-border-radius: 3px;
-margin: 0 auto;
+.form-field > label,
+.form-field-area textarea {
+  display: block;
 }
 
-.form-field input:focus, .form-field-area textarea:focus {
-border: 1px solid #B966A4;
-outline: 0;
+.form-field input {
+  padding: 10px;
+  width: 280px;
+  max-width: 100%;
+  border: 1px solid #a5a4a4;
+  border-radius: 3px;
 }
 
-.required{
-color: #B966A4;
+.form-field-area textarea {
+  width: 500px;
+  max-width: 100%;
+  height: 200px;
+  border: 1px solid #a5a4a4;
+  border-radius: 3px;
+  margin: 0 auto;
 }
 
-.submit{
-padding: 8px 6px;
-margin: 20px 0;
-width: 150px;
-max-width: 100%;
-border: 1px solid #868686;
-border-radius: 3px;
-font-size: 20px;
-font-family: 'Cormorant Infant', serif;
-cursor: pointer;
+.form-field input:focus,
+.form-field-area textarea:focus {
+  border: 1px solid #b966a4;
+  outline: 0;
 }
 
-.submit:hover{
-background-color:rgb(206, 182, 195);
+.required {
+  color: #b966a4;
 }
 
+.submit {
+  padding: 8px 6px;
+  margin: 20px 0;
+  width: 150px;
+  max-width: 100%;
+  border: 1px solid #868686;
+  border-radius: 3px;
+  font-size: 20px;
+  font-family: "Cormorant Infant", serif;
+  cursor: pointer;
+}
 
+.submit:hover {
+  background-color: rgb(206, 182, 195);
+}
 
-footer{
-text-align: center;
-padding: 10px;
-margin-top: 25px;
-background-color: #B966A4;
-color: white;
-font-size: 20px;
-position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #d3a1c6;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .thanks a {
@@ -301,113 +284,120 @@ position: fixed;
   list-style: none;
 }
 
-.thanks-page, .nf-account{
-margin-bottom: 250px;
+.thanks-page,
+.nf-account {
+  margin-bottom: 250px;
 }
 
-@media screen and (min-width:500px){
-
-.main-pic{
-max-width: 380px;
-}
-
-.lauri-pic::before{
-width:390px;
-height:500px;
-margin-bottom: -500px;
-}
-}
-
-@media screen and (min-width:820px){
-.foto{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  justify-content: center;
-  gap: 20px;
+@media screen and (min-width: 370px) {
+  .lauri-pic::before {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    height: 370px;
+    margin-bottom: -370px;
+    border: 3px solid #b966a4;
+    transform: rotate(-5deg);
   }
+}
+
+@media screen and (min-width: 500px) {
+  .main-pic {
+    max-width: 380px;
   }
 
-
-@media screen and (min-width:900px){
-
-body{
-background-size: 200%;
+  .lauri-pic::before {
+    width: 390px;
+    height: 500px;
+    margin-bottom: -500px;
+  }
 }
 
-
-h1{
-font-size: 85px;
-margin: 20px 0;
+@media screen and (min-width: 820px) {
+  .foto {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
-.menu{
-display: block;
-text-align: center;
-margin: 0;
-padding: 0;
+@media screen and (min-width: 900px) {
+  body {
+    background-size: 200%;
+  }
+
+  h1 {
+    font-size: 85px;
+    margin: 20px 0;
+  }
+
+  .menu {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 12px;
+  }
+
+  nav {
+    padding: 14px 0;
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .main-pic {
+    float: right;
+  }
+
+  .lauri-pic {
+    position: relative;
+  }
+
+  .lauri-pic::before {
+    position: absolute;
+    left: unset;
+    right: 16px;
+    width: 390px;
+    height: 510px;
+  }
 }
 
-nav a{
-display: inline-block;
-font-size: 20px;
-padding: 0 12px;
-}
-
-nav{
-padding: 14px 0;
-}
-
-.toggler{
-  display: none;
-}
-
-.main-pic{
-float: right;
-}
-
-.lauri-pic{
-  position: relative;
-}
-
-
-.lauri-pic::before {
-  position: absolute;
- left:unset;
-  right: 16px;
-  width:390px;
-  height:500px;
-  
-}
-}
-
-@media screen and (min-width:1000px){
-
-.parents{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  justify-items: center;
-  column-gap: 50px;
+@media screen and (min-width: 1000px) {
+  .parents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-items: center;
+    column-gap: 50px;
   }
 
   .mum {
-  justify-self: end;
+    justify-self: end;
   }
 
-  .dad{
-  justify-self: start;
+  .dad {
+    justify-self: start;
   }
 
-  .parents p{
+  .parents p {
     width: 500px;
-    }
+  }
 
-.aunt p{
-width: 800px;
-margin-left: auto;
-margin-right: auto;
-}
-
+  .aunt p {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*
