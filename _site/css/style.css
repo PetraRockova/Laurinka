@@ -29,6 +29,10 @@ body {
   background-size: 400%;
 }
 
+.header-h1{
+text-decoration: none;
+}
+
 .Lauri,
 .hi,
 .h2-about,
