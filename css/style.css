@@ -18,14 +18,13 @@ body {
   font-weight: normal;
   line-height: 1.5;
  font-family: 'Raleway', sans-serif;
-
   color: black;
-  text-align: left;
+  text-align: center;
   background-image: linear-gradient(
       rgba(255, 253, 253, 0.88),
       rgba(255, 253, 253, 0.88)
     ),
-    url(/images/pink4.jpg);
+    url(/images/bg.jpg);
   background-size: 400%;
 }
 
@@ -40,12 +39,14 @@ h1 {
   font-family: "WindSong", cursive;
 }
 
+.Lauri{
+font-size: 40px;
+}
+
 main {
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 50px 20px;
   max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+  margin: 0 auto 50px auto;
   text-align: center;
 }
 
@@ -63,8 +64,16 @@ h3 {
   margin-top: 25px;
 }
 
-h2 {
+h2, .account-p {
   margin-bottom: 0px;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 800px){
+
+  h2, .account-p{
+    font-size: 34px;
+  }
 }
 
 .h2-about {
@@ -101,7 +110,7 @@ p {
 
 .source a {
   text-decoration: none;
-  color: grey;
+  color: rgb(212, 211, 211);
 }
 
 .nf-source a {
@@ -122,7 +131,7 @@ p {
 
 .contact,
 .foto {
-  margin: 25px 0;
+  margin: 25px 0 0;
 }
 
 .foto {
@@ -166,7 +175,7 @@ nav a {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  padding: 2px 0;
+  padding: 8px 0;
 }
 
 nav {
@@ -174,17 +183,21 @@ nav {
   box-shadow: 0px 2px 4px rgb(160, 159, 159);
 }
 
+.hover:hover {
+  background-color: #d3a1c6;
+  }
 
 /* obrázky */
 
 img {
+  width: 100%;
   box-shadow: rgb(217, 217, 214) 0 0 3px 1px;
 }
 
 .main-pic {
   width: 100%;
   max-width: 200px;
-  margin: 0 25px;
+  margin: 0 25px 25px;
 }
 
 .foto img {
@@ -226,6 +239,89 @@ margin: 0px 30px 30px 30px;
 
 .pluses img {
   margin-top: 22px;
+}
+
+.pluses{
+  text-align: left;
+}
+
+.medpor, .dr-tahiri{
+  background-color: #ffffff4f;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: rgb(185 102 164 / 48%) 0px 0px 30px -20px, rgb(185 102 164 / 9%) 0px 30px 30px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+
+.medpor p{
+padding: 30px;
+}
+
+.medpor-grid{
+display: block;
+padding: 30px;
+}
+
+.medpor img{
+margin-top: 30px;
+}
+
+.dr-tahiri img{
+max-width: 50%;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.dr-tahiri{
+  padding: 30px;
+  max-width: 900px;
+}
+
+.dr-tahiri h2, .treatment h3{
+  margin-top: 0;
+}
+
+.w-bg-treatment{
+background-color: #ffffff4f;
+margin: 0 auto;
+box-shadow: rgb(185 102 164 / 48%) 0px 0px 30px -20px, rgb(185 102 164 / 9%) 0px 30px 30px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+
+.w-bg-treatment p{
+padding: 30px;
+}
+
+@media screen and (min-width: 750px){
+
+  .medpor-grid{
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medpor img{
+    margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+  .treatment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
+}
+
+
+.medpor h3, .w-bg-treatment h3{
+  padding: 15px;
+  margin-bottom: 0;
+  background-color: #b966a4;
+  color: white;
 }
 
 .foto-nadace {
@@ -336,7 +432,6 @@ margin-top: 25px;
 
 .submit {
   padding: 8px 6px;
-  margin: 20px 0;
   width: 150px;
   max-width: 100%;
   border: none;
@@ -400,11 +495,12 @@ margin: 25px 0;
   }
 
 .w-bg{
+  margin-bottom: 50px;
 background-color: #ffffff4f;
 box-shadow: rgb(185 102 164 / 48%) 0px 0px 30px -20px, rgb(185 102 164 / 9%) 0px 30px 30px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
 }
 
-.w-bg p{
+.w-bg p, .w-bg-treatment p{
 padding: 30px;
 }
 
@@ -474,10 +570,6 @@ padding: 30px;
     padding: 18px 12px;
   }
 
-.hover:hover {
-background-color: #d3a1c6;
-}
- 
 
   .toggler {
     display: none;
@@ -508,7 +600,7 @@ background-color: #d3a1c6;
     text-align: center;
     justify-content: center;
     column-gap: 30px;
-    margin-bottom: 50px;
+
   }
 }
 
