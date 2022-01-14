@@ -14,18 +14,18 @@ html {
 
 body {
   margin: 0 0 10px;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: normal;
   line-height: 1.5;
-  font-family: "Cormorant Infant", serif;
+ font-family: 'Raleway', sans-serif;
 
   color: black;
   text-align: left;
   background-image: linear-gradient(
-      rgba(255, 253, 253, 0.623),
-      rgba(255, 253, 253, 0.877)
+      rgba(255, 253, 253, 0.88),
+      rgba(255, 253, 253, 0.88)
     ),
-    url(/images/pink2.jpg);
+    url(/images/pink4.jpg);
   background-size: 400%;
 }
 
@@ -42,7 +42,7 @@ h1 {
 
 main {
   padding: 0 20px 20px 20px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
@@ -69,11 +69,18 @@ h2 {
 
 .h2-about {
   font-size: 40px;
-  margin-top: 35px;
+  margin-top: 0;
+  background-color: #b966a4;
+  color: white;
 }
 
 .twins .h2-about {
   margin-top: 25px;
+}
+
+.twins{
+max-width: 900px;
+margin: 0 auto 50px auto;
 }
 
 h3 {
@@ -97,7 +104,7 @@ p {
   color: grey;
 }
 
-.darsluchu-source a {
+.nf-source a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -138,6 +145,7 @@ p {
   font-weight: 500;
   text-align: center;
   cursor: pointer;
+  padding: 12px 0;
 }
 
 .toggler-x {
@@ -156,7 +164,7 @@ nav a {
   font-weight: bold;
   color: white;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   padding: 2px 0;
 }
@@ -170,8 +178,6 @@ nav {
 /* obrázky */
 
 img {
-  max-width: 100%;
-  width: 350px;
   box-shadow: rgb(217, 217, 214) 0 0 3px 1px;
 }
 
@@ -182,16 +188,41 @@ img {
 }
 
 .foto img {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
+}
+
+
+
+.mum img{
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.dad img{
+border-radius: 23% 77% 31% 69% / 60% 29% 71% 40%;
+}
+
+.aunt img{
+border-radius: 54% 46% 30% 70% / 19% 30% 70% 81%;
+}
+
+.grid img{
+max-width: 80%;
+margin: 0px 30px 30px 30px;
+}
+
+.dad p {
+  padding-top: 60px;
 }
 
 .twin-photo-about {
-  width: 450px;
+ 
+  border-radius: 30% 40% 29% 71% / 64% 30% 70% 36%;
+  margin: 0px 30px 30px 30px;
+  max-width: 550px;
+  width: 70%;
 }
 
-.dad-photo-about {
-  width: 400px;
-}
 
 .pluses img {
   margin-top: 22px;
@@ -201,11 +232,60 @@ img {
   width: 100%;
   max-width: 250px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.darsluchu-source a {
-  color: #b966a4;
+.motto{
+font-size: 25px;
+color: #FF8484;
 }
+
+.here{
+background-color: #FF8484;
+border-radius: 50%;
+padding: 19px 15px;
+width: 70px;
+height: 70px;
+display: inline-block;
+}
+
+.here:hover{
+background-color: #d3a1c6 ;
+}
+
+.account{
+font-size: 30px;
+font-weight: 700;
+color: #b966a4;
+}
+
+.mt-25{
+margin-top: 25px;
+}
+
+.hashtag{
+font-size: 25px;
+}
+
+@media screen and (min-width: 800px){
+
+  .hashtags{
+  display: flex;
+  justify-content: space-between;
+    }
+
+
+}
+
+@media screen and (min-width: 1100px){
+
+  .hashtag{
+  font-size: 40px;
+  }
+}
+
+
+
 
 .contact a {
   text-decoration: none;
@@ -225,18 +305,24 @@ margin-top: 25px;
   padding: 10px;
   width: 280px;
   max-width: 100%;
-  border: 1px solid #a5a4a4;
+  border: none;
   border-radius: 3px;
+  box-shadow: 1px 1px 3px #595959;
+    margin-bottom: 20px;
 }
+
 
 .form-field-area textarea {
   width: 500px;
   max-width: 100%;
   height: 200px;
-  border: 1px solid #a5a4a4;
+  border: none;
   border-radius: 3px;
   margin: 0 auto;
+  box-shadow: 1px 1px 3px #595959;
+    margin-bottom: 20px;
 }
+
 
 .form-field input:focus,
 .form-field-area textarea:focus {
@@ -253,15 +339,20 @@ margin-top: 25px;
   margin: 20px 0;
   width: 150px;
   max-width: 100%;
-  border: 1px solid #868686;
+  border: none;
   border-radius: 3px;
   font-size: 20px;
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Raleway', sans-serif;
   cursor: pointer;
+  background-color: #b966a4;
+  color: white;
+  font-weight: 400;
+  box-shadow: 1px 1px 3px #595959;
+
 }
 
 .submit:hover {
-  background-color: rgb(206, 182, 195);
+  background-color: #d3a1c6;
 }
 
 footer {
@@ -308,6 +399,21 @@ margin: 25px 0;
     z-index: -1;
   }
 
+.w-bg{
+background-color: #ffffff4f;
+box-shadow: rgb(185 102 164 / 48%) 0px 0px 30px -20px, rgb(185 102 164 / 9%) 0px 30px 30px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+
+.w-bg p{
+padding: 30px;
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 370px) {
 
 
@@ -335,7 +441,7 @@ margin: 25px 0;
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 1100px) {
   .foto {
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -363,13 +469,15 @@ margin: 25px 0;
 
   nav a {
     display: inline-block;
-    font-size: 20px;
-    padding: 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 18px 12px;
   }
 
-  nav {
-    padding: 14px 0;
-  }
+.hover:hover {
+background-color: #d3a1c6;
+}
+ 
 
   .toggler {
     display: none;
@@ -394,30 +502,13 @@ margin: 25px 0;
 }
 
 @media screen and (min-width: 1000px) {
-  .parents {
+  .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    justify-items: center;
-    column-gap: 50px;
-  }
-
-  .mum {
-    justify-self: end;
-  }
-
-  .dad {
-    justify-self: start;
-  }
-
-  .parents p {
-    width: 500px;
-  }
-
-  .aunt p {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 50px;
   }
 }
 
