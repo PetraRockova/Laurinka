@@ -287,6 +287,7 @@ box-shadow: rgb(185 102 164 / 48%) 0px 0px 30px -20px, rgb(185 102 164 / 9%) 0px
 
 .w-bg-treatment p{
 padding: 30px;
+margin-top: 0;
 }
 
 @media screen and (min-width: 750px){
@@ -474,6 +475,10 @@ footer {
 .thanks-page,
 .nf-account {
   margin-bottom: 250px;
+}
+
+.qr{
+max-width: 200px;
 }
 
 .ig{
